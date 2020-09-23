@@ -8,7 +8,7 @@ export class RecipeService{
 
     recipeSelected = new EventEmitter<Recipe>();
 
-    constructor(private shoppingListService: shoppingListService){}
+    constructor(private shoppingListService: ShoppingListService){}
 
     private recipes: Recipe[] = [
         new Recipe('A Pizza!',
@@ -37,7 +37,7 @@ export class RecipeService{
         }
 
         addIngridientsToShoppingList(ingridients: Ingridient[]): void{
-
+            this.shoppingListService.addIngridients(ingridients);
         }
 
 }
