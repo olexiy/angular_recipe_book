@@ -2,7 +2,7 @@ import {EventEmitter, Injectable} from '@angular/core';
 import { Ingridient} from '../shared/ingridient.model';
 
 @Injectable({providedIn: 'root'})
-export class ShoppingListService{
+export class shoppingListService{
 
     ingridientsChanged = new EventEmitter<Ingridient[]>();
     private ingridients: Ingridient[] = [

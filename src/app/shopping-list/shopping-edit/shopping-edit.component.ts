@@ -1,13 +1,13 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Ingridient } from 'src/app/shared/ingridient.model';
-import {ShoppingListService} from '../shoping-list.service';
+import {ShoppingListService} from '../shopping-list.service';
 
 @Component({
-  selector: 'app-shoping-edit',
-  templateUrl: './shoping-edit.component.html',
-  styleUrls: ['./shoping-edit.component.css']
+  selector: 'app-shopping-edit',
+  templateUrl: './shopping-edit.component.html',
+  styleUrls: ['./shopping-edit.component.css']
 })
-export class ShopingEditComponent implements OnInit {
+export class shoppingEditComponent implements OnInit {
   @ViewChild('nameInput') nameInputRef: ElementRef;
   @ViewChild('amountInput') amountInputRef: ElementRef;
 
